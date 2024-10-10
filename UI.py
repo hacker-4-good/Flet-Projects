@@ -21,7 +21,7 @@ class Expense(UserControl):
     def hover_animation(self, e):
         if e.data=='true':
             e.control.content.controls[2].offset = transform.Offset(0,0)
-            e.control.content.controls[2].opacity = 100
+            e.control.content.controls[2].opacity = 1
             e.control.update()
         else:
             e.control.content.controls[2].offset = transform.Offset(0,1)
